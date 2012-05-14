@@ -38,10 +38,8 @@ class UserType extends AbstractType
 
     public function getDefaultOptions(array $options)
     {
-        $options = array_merge(array(
-            'data_class' => 'Retentio\Document\User'),
-            $options);
-
-        return $options;
+        
+        return array(
+            'data_class' => 'Boomstone\Document\User');
     }
 }
