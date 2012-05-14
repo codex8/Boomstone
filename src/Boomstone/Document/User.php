@@ -89,7 +89,15 @@ class User
     {
         return $this->email;
     }
-
+    
+    /**
+     * Quick fix to make work attribute on user object
+     */
+    public function __get($attribute){
+        return $this->$attribute;
+    } 
+     
+     
     public function getId()
     {
         return $this->id;
